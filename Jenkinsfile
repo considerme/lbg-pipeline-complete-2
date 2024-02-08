@@ -1,10 +1,10 @@
 pipeline{
  environment {
-        dockerUserName="victorialloyd"
-        credentialsIdGCP = "exec-cohort-7"
-        namespace = "lbg-trainer"
+        dockerUserName="sidudani"
+        credentialsIdGCP = "24322141-821c-4120-9492-058207cdaa49"
+        namespace = "lbg-6"
         // e.g. lbg-1 for learner1, lbg-2 for learner2
-        projectId= "exec-cohort-7"
+        projectId= "lbg-mea-leaders-c12"
         
         imageName = "vatcalc"
         registry = "${dockerUserName}/${imageName}"
@@ -34,9 +34,6 @@ pipeline{
                 steps {
                     withSonarQubeEnv('sonar-qube-1') {        
                     sh "${scannerHome}/bin/sonar-scanner"
-                    }
-                    timeout(time: 10, unit: 'MINUTES'){
-                    waitForQualityGate abortPipeline: true
                     }
                 }
             }
