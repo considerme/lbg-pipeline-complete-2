@@ -45,10 +45,8 @@ function App() {
         <PriceEntryField customstyle="field" label="Price incl VAT: " priceChanged={handleGrossPriceChange} price={grossPrice === 0.0 ? "" : grossPrice} />
       </div>
       <div className='colour-border'>
-        <VatRateField customstyle="field" vatRateChanged={handleVatRateChanged} value={vatRate} updatePrices={updatePrices} />
-        <PriceEntryField customstyle="field" label="Price excluding VAT: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
-        <DisplayBlock customstyle="field" label="VAT to pay: £" value={vatToPay} />
-        <DisplayBlock customstyle="field" label="Price including VAT: " priceChanged={handleGrossPriceChange} price={grossPrice === 0.0 ? "" : grossPrice} />
+      <iframe src="https://www.bbc.co.uk/news/uk">
+      </iframe>
       </div>
       
     </div>
