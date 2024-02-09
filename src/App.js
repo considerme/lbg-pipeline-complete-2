@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className='header field'>
-      <DisplayBlock align="center">Sid MAT CALCULATOR</DisplayBlock> 
+      <div>Sid MAT CALCULATOR</div>
       <div className='colour-border'>
         <VatRateField customstyle="field" vatRateChanged={handleVatRateChanged} value={vatRate} updatePrices={updatePrices} />
         <PriceEntryField customstyle="field" label="Price excl VAT: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
