@@ -44,11 +44,8 @@ function App() {
         <DisplayBlock customstyle="field" label="VAT to pay: " value={vatToPay} />
         <PriceEntryField customstyle="field" label="Price incl VAT: " priceChanged={handleGrossPriceChange} price={grossPrice === 0.0 ? "" : grossPrice} />
       </div>
-      <div className='colour-border'>
       <iframe src="https://www.bbc.co.uk/news/uk">
-      </iframe>
-      </div>
-      
+      </iframe>    
     </div>
   );
 }
