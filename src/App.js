@@ -42,8 +42,8 @@ function App() {
         <DisplayBlock customstyle="field" label="VAT to pay: " value={vatToPay} />
         <PriceEntryField customstyle="field" label="Price incl VAT: " priceChanged={handleGrossPriceChange} price={grossPrice === 0.0 ? "" : grossPrice} />
       </div>
-      <iframe src="https://www.google.co.uk/">
-      </iframe>    
+      <embed src="https://www.google.co.uk/">
+      </embed>
     </div>
   );
 }
