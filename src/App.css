@@ -1,5 +1,5 @@
 .field{
-  width: 200px;
+  width: auto;
   padding-bottom: 10px;
 }
 
@@ -13,5 +13,5 @@
   background-color: #f1f1f1;
   padding: 50px 20px;
   float: center;
-  width: 1800px;
+  width: auto;
 }
