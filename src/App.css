@@ -4,14 +4,14 @@
 }
 
 .colour-border{
-  border: 3px solid rgb(0, 26, 255);
+  border: 1px solid rgba(0, 255, 128, 0.543);
   padding: 20px;
 }
 
 .header{
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 20px 10px;
+  padding: 50px 20px;
   float: center;
-  width: 800px;
+  width: 1800px;
 }
